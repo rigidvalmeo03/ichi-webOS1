@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chemistry.exe</title>
+    </head>
+    
+    <body style="background-color: pink; color: darkred; font-family: 'Times New Roman';">
+
+        <div style="display: flex; justify-content: space-between; background-color: rgb(202, 11, 104); color: white; padding: 10px;">
+            <p style="margin: 0px;">Chemistry.exe</p>
+            <p style="margin: 0px;">Ichi's Digital Laboratory</p>
+            <p id="timeElement" style="margin: 0px;"></p>
+        </div>
+
+        <p style="color: rgb(202, 11, 104); text-align: center; font-size: 22px;">Ichi's Digital Laboratory</p>
+        <p style="text-align: center; font-size: 18px;">A tiny digital space dedicated to chemistry, curiosity, and fun pink stuff:3</p>
+
+        <nav style="text-align: center; font-size: 18px;">
+            <a href="#resources" style="color: rgb(194, 24, 91);">Resources</a>
+            <a href="#topics" style="color: rgb(194, 24, 91);">Topics</a>
+            <a href="#about" style="color: rgb(194, 24, 91);">About Me</a>
+        </nav>
+
+        <hr style="border: none; border-top: 2px solid rgb(243, 166, 200); width: 80%;">
+
+        <div id="desktopApps" style="display: flex; justify-content: center; gap: 40px; padding-top: 64px;">
+            <div onclick="selectApp(this); openWindow(chemistryNotes)" style="text-align: center; width: 100px; cursor: pointer;">
+                <img src="rigidganda.jpg" alt="Chemistry Notes icon" width="80">
+                <p style="margin: 4px; color: rgb(202, 11, 104);">Chemistry Notes</p>
+            </div>
+            <div onclick="selectApp(this); openWindow(periodicTable)" style="text-align: center; width: 100px; cursor: pointer;">
+                <img src="rigidganda.jpg" alt="Periodic Table icon" width="80">
+                <p style="margin: 4px; color: rgb(202, 11, 104);">Periodic Table</p>
+            </div>
+        </div>
+
+        <div id="chemistryNotes" style="display: none; position: absolute; top: 200px; left: 250px; background-color: rgb(255, 220, 235); padding: 20px; border: 2px solid rgb(202, 11, 104);">
+            <button onclick="closeWindow(chemistryNotes)" style="float: right; background-color: rgb(202, 11, 104); color: rgb(255, 255, 255); border: none; cursor: pointer;">X</button>
+            <p id="chemistryNotesheader" style="cursor: move; user-select: none; text-align: center; background-color: rgb(202, 11, 104); color: rgb(255, 255, 255);">Chemistry Notes</p>
+            <h1 style="color: rgb(202, 11, 104); text-align: center;">Chemistry Notes </h1>
+            <p style="color: rgb(202, 11, 104);">Chemistry is the study of matter, its properties, and its composition.</p>
+            <h2 style="color: rgb(202, 11, 104);">Quick Chemistry Facts!</h2>
+            <ul style="color: rgb(202, 11, 104);">
+                <li>Atoms are the basic units of matter.</li>
+                <li>Elements are made of one type of atom.</li>
+                <li>Chemical reactions form new substances.</li>
+            </ul>
+        </div>
+
+        <div id="periodicTable" style="display: none; position: absolute; top: 180px; left: 350px; background-color: rgb(255, 220, 235); padding: 20px; border: 2px solid rgb(202, 11, 104); width: 350px;">
+            <button onclick="closeWindow(periodicTable)" style="float: right; background-color: rgb(202, 11, 104); color: rgb(255, 255, 255); border: none; cursor: pointer;">X</button>
+            <p id="periodicTableheader" style="cursor: move; user-select: none; text-align: center; background-color: rgb(202, 11, 104); color: rgb(255, 255, 255);">Periodic Table</p>
+            <h1 style="color: rgb(202, 11, 104); text-align: center;">Periodic Table</h1>
+            <p style="color: rgb(202, 11, 104);">The periodic table organizes elements according to their atomic number and properties.</p>
+            <h2 style="color: rgb(202, 11, 104);">Here are some of the most common elements!</h2>
+            <ul style="color: rgb(202, 11, 104);">
+                <li>Hydrogen — H — Atomic Number: 1</li>
+                <li>Helium — He — Atomic Number: 2</li>
+                <li>Carbon — C — Atomic Number: 6</li>
+                <li>Nitrogen — N — Atomic Number: 7</li>
+                <li>Oxygen — O — Atomic Number: 8</li>
+                <li>Sodium — Na — Atomic Number: 11</li>
+                <li>Chlorine — Cl — Atomic Number: 17</li>
+                <li>Iron — Fe — Atomic Number: 26</li>
+            </ul>
+            <h2 style="color: rgb(202, 11, 104);">Here is the actual Periodic Table!</h2>
+            <p style="color: rgb(202, 11, 104);"><b>DISCLAIMER:</b> This photo is not made by me, its creator is <b>Fabio Crameri</b>. Credits to him.</p>
+             <img src="periodictable.webp" alt="Periodic Table icon" width="300">
+        </div>
+
+        <div id="welcome" style="display: none; position: absolute; top: 150px; left: 100px; background-color: rgb(255, 220, 235); padding: 20px; border: 2px solid rgb(202, 11, 104);"> 
+            <button onclick="closeWindow(welcomeScreen)" style="float: right; background-color: rgb(202, 11, 104); color: rgb(255, 255, 255); border: none; cursor: pointer;">X</button>
+            <p id="welcomeheader" style="cursor: move; user-select: none; text-align: center; background-color: rgb(202, 11, 104); color: rgb(255, 255, 255);">Chemistry.exe</p>
+            <h1 style="color: rgb(202, 11, 104); font-family: Georgia; text-align: center; font-size: 40px;">Welcome to Chemistry.exe</h1> 
+            <p style="text-align: center; color: rgb(202, 11, 104); border-top: 1px solid rgb(243, 166, 200); padding-top: 10px;">Status: Ready for some fun chemistry!!</p>
+        </div>
+
+        <div style="text-align: center; margin-top: 20px;">
+        <button onclick="openWindow(welcomeScreen)" style="background-color: rgb(202, 11, 104); color: rgb(255, 255, 255); border: none; cursor: pointer; ; font-family: 'Times New Roman';">
+            Open Chemistry.exe
+        </button>
+        </div>
+
+        <h2 style="color: rgb(202, 11, 104); text-align: center; font-size: 28px;">Explore my Laboratory Above!</h2>
+       
+        <hr style="border: none; border-top: 2px solid rgb(243, 166, 200); width: 80%;">
+       
+        <p style="font-size: 18px; text-align: center;">Those will help you discover elements, molecules, chemical reactions, and interesting scientific concepts! Yippieee.</p>
+        <img src="rigidganda.jpg" alt="A cooool chemistry Laboratory" width="400" style="display: block; margin: auto;">
+
+        <hr style="border: none; border-top: 2px solid rgb(243, 166, 200); width: 80%;">
+
+        <h2 id="resources" style="color: rgb(202, 11, 104); font-size: 28px;">My Chemistry Resources</h2>
+        <p style="font-size: 18px;">These are the useful YouTube Channels and resources for learning chemistry! So skibidi, no cap.</p>
+        <ul>
+        <li><a href="https://www.youtube.com/@TheOrganicChemistryTutor" style="color: rgb(202, 11, 104);">Organic Chemistry Tutor</a></li>
+        <li><a href="https://www.youtube.com/@ProfessorDaveExplains" style="color: rgb(202, 11, 104);">Professor Dave Explains</a></li>
+        <li><a href="https://www.youtube.com/@ketzbook" style="color: rgb(202, 11, 104);">Ketzbook</a></li>
+        <li><a href="https://www.youtube.com/@NileRed" style="color: rgb(202, 11, 104);">Bonus: NileRed</a></li>
+        </ul>
+        <hr style="border: none; border-top: 2px solid rgb(243, 166, 200); width: 80%;">
+
+        <h2 id="topics" style="color: rgb(202, 11, 104); font-size: 28px;"> Chem Topics I Love</h2>
+        <ul style="font-size: 18px;">
+            <li>Periodic Table</li>
+            <li>Chemical Reactions</li>
+            <li>Acids and Bases</li>
+            <li>Molecules</li>
+        </ul>
+
+        <hr style="border: none; border-top: 2px solid rgb(243, 166, 200); width: 80%;">
+
+        <h2 id="about" style= "color: rgb(202, 11, 104); font-size: 28px;"> About the Cute Chemist</h2>
+        <p style="font-size: 18px;"> Hi! I'm <b>Ichi</b>, a Grade 12 STEM student who enjoys learning about chemistry, science, and the world around me :3 
+            
+        I aspire to be a <strong style="color: rgb(202, 11, 104);">Chemist</strong> or a <strong style="color: rgb(202, 11, 104);">Chemical Engineer</strong> one day.</p>
+
+        <script src="script.js"></script>  
+
+        </body>
+</html>
