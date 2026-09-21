@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Chemistry.exe</title>
+        <title>Intro to Chem!</title>
     </head>
     
     <body style="background-color: pink; color: darkred; font-family: 'Times New Roman';">
 
         <div style="display: flex; justify-content: space-between; background-color: rgb(202, 11, 104); color: white; padding: 10px;">
-            <p style="margin: 0px;">Chemistry.exe</p>
+            <p style="margin: 0px;">Intro to Chem!</p>
             <p style="margin: 0px;">Ichi's Digital Laboratory</p>
             <p id="timeElement" style="margin: 0px;"></p>
         </div>
@@ -25,11 +25,11 @@
 
         <div id="desktopApps" style="display: flex; justify-content: center; gap: 40px; padding-top: 64px;">
             <div onclick="selectApp(this); openWindow(chemistryNotes)" style="text-align: center; width: 100px; cursor: pointer;">
-                <img src="rigidganda.jpg" alt="Chemistry Notes icon" width="80">
+                <img src="notes-icon.png" alt="Chemistry Notes icon" width="80">
                 <p style="margin: 4px; color: rgb(202, 11, 104);">Chemistry Notes</p>
             </div>
             <div onclick="selectApp(this); openWindow(periodicTable)" style="text-align: center; width: 100px; cursor: pointer;">
-                <img src="rigidganda.jpg" alt="Periodic Table icon" width="80">
+                <img src="chem-icon.png" alt="Periodic Table icon" width="80">
                 <p style="margin: 4px; color: rgb(202, 11, 104);">Periodic Table</p>
             </div>
         </div>
@@ -44,6 +44,31 @@
                 <li>Atoms are the basic units of matter.</li>
                 <li>Elements are made of one type of atom.</li>
                 <li>Chemical reactions form new substances.</li>
+            </ul>
+            <h2 style="color: rgb(202, 11, 104);">Pure Substances!</h2>
+            <u style="color: rgb(202, 11, 104);">
+                <li><b>Matter</b> - Anything that has mass and occupies space.</li>
+                <li><b>Pure Substance</b> - Has a fixed composition; includes elements and compounds.</li>
+                <li><b>Element</b> - Made of one type of atom; cannot be broken down.</li>
+                <li><b>Compound</b> - Made of two or more elements chemically combined.</li>
+                <li><b>Mixture</b> - Two or more substances physically combined; can be separated.</li>
+            </u>
+            <h2 style="color: rgb(202, 11, 104);">Atoms, Molecules, and Ions</h2>
+            <ul style="color: rgb(202, 11, 104);">
+                <li>1. <b>Electronic Structure of atoms</b> - how electrons are arranged in an atom's energy levels (or shells).</li>
+                <li>2. <b>Pauli Exclusion Principle</b> - Each orbital can hold 2 electrons with opposite spins</li>
+                <li>3. <b>Hund's Rule</b> - Electrons fill empty orbitals first before pairing up.</li>
+                <li><img src="hundrules.png" alt="Hund Rules" width="300"> <b>Photo Source:</b> Science Notes</li>
+                <li>4. <b>Aufbau Principle</b> - electrons fill the lowest energy first.</li>
+                <li><img src="aufbau-principle.png" alt="Aufbau Principle" width="300"> <b>Photo Source:</b> BYJU's The Learning App</li>
+            </ul>
+            <h2 style="color: rgb(202, 11, 104);">Chemical Bonding</h2>
+            <p style="color: rgb(202, 11, 104);">Joining of atoms to form compounds or molecules. Atoms bond to become more stable, usually by completing their outer electron shells.</p>
+            <p style="color: rgb(202, 11, 104);">Types of Chemical Bonds:</p>
+            <ul style="color: rgb(202, 11, 104);">
+                <li>1. <b>Ionic Bond</b> - metals + nonmetals = ionic compounds</li>
+                <li>2. <b>Covalent Bond</b> - nonmetals + nonmetals = molecular compounds</li>
+                <li>3. <b>Metallic Bond</b> - metals + metals =metallic substance</li>
             </ul>
         </div>
 
@@ -64,8 +89,30 @@
                 <li>Iron — Fe — Atomic Number: 26</li>
             </ul>
             <h2 style="color: rgb(202, 11, 104);">Here is the actual Periodic Table!</h2>
-            <p style="color: rgb(202, 11, 104);"><b>DISCLAIMER:</b> This photo is not made by me, its creator is <b>Fabio Crameri</b>. Credits to him.</p>
-             <img src="periodictable.webp" alt="Periodic Table icon" width="300">
+            <p style="color: rgb(202, 11, 104);"><b>Photo Source:</b> Fabio Crameri.</p>
+            <img src="periodictable.webp" alt="Periodic Table icon" width="300">
+            <h2 style="color: rgb(202, 11, 104);">Periodicity</h2>
+            <p style="color: rgb(202, 11, 104);">Periodicity is the repeating patterns in properties of elements across the periodic table</p>
+            <ul style="color: rgb(202, 11, 104);">
+                <li>1. <b>Atomic Radius (Size of Atom)</b> - Across a period: more protons pull electrons closer (same shell → smaller). Down a group: more shells → atoms get bigger</li>
+                <li>2. <b>Ionization Energy (energy to remove 1 electron)</b> - More electrons in outer shell = harder to remove. Farther from nucleus = easier to remove</li>
+                <li>3. <b>Electronegativity (pull on shared electrons)</b> - More protons + almost full outer shell = stronger pull. Bigger atoms = weaker pull</li>
+                <li>4. <b>Metallic Character</b> -  Elements on the left (like Na, K) do this better than the right (like Cl)</li>
+            </ul>
+            <img src="periodicity.jpg" alt="Periodicity" width="300">
+            <p style="color: rgb(202, 11, 104);"><b>Photo Source:</b> Mirek2 / Wikimedia Commons</p>
+            <h2 style="color: rgb(202, 11, 104);">Periodic Table Groups and Families</h2>
+            <ul style="color: rgb(202, 11, 104);">
+                <li><b>Group 1: Alkali Metals</b> - Very reactive, soft metals</li>
+                <li><b>Group 2: Alkaline Earth Metals</b> - Reactive, found in rocks</li>
+                <li><b>Groups 3-12: Transition Metals</b> - Hard, shiny, good conductors</li>
+                <li><b>Group 13: Boron Group</b> - Less Reactive, Mixed types, includes aluminum</li>
+                <li><b>Group 14: Carbon Group</b> - Forms many compounds</li>
+                <li><b>Group 15: Nitrogen Group</b> - Used in air and fertilizers</li>
+                <li><b> Group 16: Oxygen Group</b> - Needed for breathing, includes sulfur</li>
+                <li><b>Group 17: Halogens</b> - Very reactive, forms salts</li>
+                <li><b>Group 18: Noble Gases</b> - Stable, nonreactive gases</li>
+            </ul>
         </div>
 
         <div id="welcome" style="display: none; position: absolute; top: 150px; left: 100px; background-color: rgb(255, 220, 235); padding: 20px; border: 2px solid rgb(202, 11, 104);"> 
