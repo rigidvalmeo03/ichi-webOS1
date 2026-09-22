@@ -32,6 +32,10 @@
                 <img src="chem-icon.png" alt="Periodic Table icon" width="80">
                 <p style="margin: 4px; color: rgb(202, 11, 104);">Periodic Table</p>
             </div>
+            <div onclick="selectApp(this); openWindow(chemistryQuiz)" style="text-align: center; width: 100px; cursor: pointer;">
+                <img src="quiz-icon.png" alt="Chemistry Quiz Icon" width="80">
+                <p style="margin: 4px; color: rgb(202, 11, 104);">Chemistry Quiz</p>
+            </div>
         </div>
 
         <div id="chemistryNotes" style="display: none; position: absolute; top: 200px; left: 250px; background-color: rgb(255, 220, 235); padding: 20px; border: 2px solid rgb(202, 11, 104);">
@@ -113,6 +117,29 @@
                 <li><b>Group 17: Halogens</b> - Very reactive, forms salts</li>
                 <li><b>Group 18: Noble Gases</b> - Stable, nonreactive gases</li>
             </ul>
+        </div>
+
+        <div id="chemistryQuiz" style="display: none; position: absolute; top: 180px; left: 250px; width: 500px; background-color: rgb(255, 220, 235); border: 3px solid rgb(202, 11, 104);">
+            <div id="chemistryQuizheader" style="background-color: rgb(202, 11, 104); color: rgb(255, 255, 255); padding: 8px; cursor: move;">
+                <button onclick="closeWindow(chemistryQuiz)" style="float: right">X</button>
+            </div>
+            <div style="padding: 20px;">
+                <h2 style="color: rgb(202, 11, 104);">Chemistry Quiz!</h2>
+                <p>Test your amazing chem knowledge! No pressure:3</p>
+                <p id="questionNumber">Question 1 of 5</p>
+                <h3 id="questionText">What is the chemical symbol for oxygen?</h3>
+                <div id="answerChoices">
+                    <button onclick="checkAnswer(0)" id="answer0" style="display: block; width: 100%; margin: 8px; padding: 10px; background-color: rgb(255, 255, 255); border: 2px solid rgb(202, 11, 104); cursor: pointer;">A. O</button>
+                    <button onclick="checkAnswer(1)" id="answer1" style="display: block; width: 100%; margin: 8px; padding: 10px; background-color: rgb(255, 255, 255); border: 2px solid rgb(202, 11, 104); cursor: pointer;">B. Ox</button>
+                    <button onclick="checkAnswer(2)" id="answer2" style="display: block; width: 100%; margin: 8px; padding: 10px; background-color: rgb(255, 255, 255); border: 2px solid rgb(202, 11, 104); cursor: pointer;">C. O2</button>
+                    <button onclick="checkAnswer(3)" id="answer3" style="display: block; width: 100%; margin: 8px; padding: 10px; background-color: rgb(255, 255, 255); border: 2px solid rgb(202, 11, 104); cursor: pointer;">D. Og</button>
+                </div>
+                <p id="feedback" style="font-weight: bold;"></p>
+                <p id="scoreText">Score: 0</p>
+
+                <button id="nextButton" onclick="nextQuestion()" style="display: none; background-color: rgb(202, 11, 104); color: rgb(255, 255, 255); border: none; padding: 10px; cursor: pointer;">Next Question</button>
+                <button id="restartButton" onclick="restartQuiz()" style="display: none; background-color: rgb(202, 11, 104); color: rgb(255, 255, 255); border: none; padding: 10px; cursor: pointer;">Restart Quiz</button> 
+            </div>
         </div>
 
         <div id="welcome" style="display: none; position: absolute; top: 150px; left: 100px; background-color: rgb(255, 220, 235); padding: 20px; border: 2px solid rgb(202, 11, 104);"> 
