@@ -147,16 +147,16 @@ Restarting the quiz
 -Icon used for the Chemistry Quiz application.
 
 6. aufbau-principle.png
--Image used in the Chemistry Notes section to explain the Aufbau Principle.
+-Image used in the Chemistry Notes section to explain the Aufbau Principle. (credits to BYJU's The Learning App)
 
 7. hundrules.png
--Image used in the Chemistry Notes section to explain Hund's Rule.
+-Image used in the Chemistry Notes section to explain Hund's Rule. (credits to Science Notes)
 
 8. periodictable.webp
--Periodic table image used inside the Periodic Table application.
+-Periodic table image used inside the Periodic Table application. (credits to Fabio Crameri)
 
 9. periodicity.jpg
--Image used in the Periodicity section of the Periodic Table application.
+-Image used in the Periodicity section of the Periodic Table application. (credits to Mirek2 / Wikimedia Commons)
 
 10. rigidganda.jpg
 - Personal image used as part of the website's visual design and About Me section.
