@@ -54,7 +54,21 @@ Chemical symbols
 Atomic numbers
 Chemical formulas
 Subatomic particles
-pH
+
+4. Chemistry Calculator
+Calculates the molar mass of chemical compounds.
+Converts grams to moles and moles to grams.
+Uses chemical formulas and atomic masses to perform calculations.
+
+5. Reaction Lab
+Includes an interactive chemistry reaction quiz.
+Lets users answer chemistry-related questions and test their knowledge of chemical reactions.
+
+6. Molecule Builder
+Allows users to select chemical elements and adjust the number of atoms.
+Displays the resulting chemical formula.
+Calculates the total number of atoms.
+Generates a visual representation of the selected molecule.
 
 The quiz includes:
 Four answer choices per question
@@ -67,14 +81,14 @@ Restart Quiz button
 
 The quiz was created using JavaScript arrays, functions, conditionals, and DOM manipulation.
 
-4. Interactive Windows - The chemistry applications open inside their own windows.
+7. Interactive Windows - The chemistry applications open inside their own windows.
 The windows can:
 Be opened
 Be closed
 Be dragged around the page
 -The website also includes a live clock in the top bar.
 
-5. Chemistry Resources
+8. Chemistry Resources
 The website contains a collection of chemistry-related learning resources and YouTube channels, including:
 The Organic Chemistry Tutor
 Professor Dave Explains
@@ -102,11 +116,14 @@ Application icons
 Chemistry notes
 Periodic table information
 Chemistry quiz
+Chemistry Calc
+Reaction Lab
+Molecule Builder
 Resources
 About Me section
 Images and buttons
 
-2. CSS - used to customize the appearance of the website.
+3. CSS - used to customize the appearance of the website.
 It was used for:
 Colors
 Fonts
@@ -117,7 +134,7 @@ Button styling
 Application windows
 Desktop layout
 
-3. JavaScript - used to make the website interactive.
+4. JavaScript - used to make the website interactive.
 It controls:
 Application selection
 The live clock
@@ -129,6 +146,9 @@ Feedback
 Score tracking
 Moving to the next question
 Restarting the quiz
+Calculating molar mass and converting grams to moles
+Another quiz(no score) for Reaction Lab
+Counting, building, and naming molecules
 
 >Project Files
 1. index.html
@@ -141,7 +161,7 @@ Restarting the quiz
 -Icon used for the Chemistry Notes application.
 
 4. chem-icon.png
--Icon used for the Periodic Table application.
+-Icon used for the Reaction Lab application.
 
 5. quiz-icon.png
 -Icon used for the Chemistry Quiz application.
@@ -161,6 +181,15 @@ Restarting the quiz
 10. rigidganda.jpg
 - Personal image used as part of the website's visual design and About Me section.
 
+11. calc.png
+- Icon for the Chemistry Calc application.
+
+12. molecule.png
+-Icon for the Molecule Builder application.
+
+13. atom.png
+-Icon used for the Periodic Table application.
+
 >How to Use
 -No installation is required to use the website. Simply visit:
 https://rigidvalmeo03.github.io/ichi-webOS1/
@@ -175,6 +204,9 @@ Once inside the website:
 7. View your final score after completing the quiz.
 8. Click Restart Quiz if you want to try again.
 The application windows can also be dragged around the page.
+9. Use the Chemistry Calculator to calculate molar masses and convert between grams and moles.
+10. Open the Reaction Lab to answer chemistry-related reaction questions.
+11. Experiment with the Molecule Builder to select elements, adjust atom quantities, and view the resulting molecular formula.
 
 >Viewing the Project Locally
 To view or edit the project locally:
@@ -212,6 +244,11 @@ Create an interactive multiple-choice quiz.
 Organize multiple files and images into one website.
 Upload a project to GitHub.
 Deploy a website using GitHub Pages.
+Perform chemical calculations using JavaScript.
+Parse chemical formulas and calculate molar masses.
+Convert between grams and moles.
+Build simple molecular representations programmatically.
+Count atoms and dynamically update webpage content.
 
 -This project helped me understand how HTML, CSS, and JavaScript can work together to create an interactive website.
 
